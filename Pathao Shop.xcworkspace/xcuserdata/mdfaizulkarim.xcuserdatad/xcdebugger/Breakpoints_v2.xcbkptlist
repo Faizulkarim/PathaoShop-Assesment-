@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "DD0A3845-CB5A-4523-9A42-BDAE33576FE0"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CE3DB83D-38B9-48DC-9148-A0EFCC9595DF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pathao Shop/Shared/Utilities/Network/OTAPIManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "getShop(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4D55035F-5A3B-4ED5-B54A-4131B01929E7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pathao Shop/Shared/Modules/Inside/HomeView/ViewModel/HomeViewViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "transform(input:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4D55035F-5A3B-4ED5-B54A-4131B01929E7 - bb30df65ec5766da"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pathao_Shop.HomeViewViewModel.transform(input: Pathao_Shop.HomeViewViewModelInput) -&gt; Pathao_Shop.HomeViewViewModelOutput"
+                  moduleName = "Pathao Shop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mdfaizulkarim/Desktop/Pathao%20Shop/Pathao%20Shop/Shared/Modules/Inside/HomeView/ViewModel/HomeViewViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "628">
+               </Location>
+               <Location
+                  uuid = "4D55035F-5A3B-4ED5-B54A-4131B01929E7 - 1282975ae370feba"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; Combine.AnyPublisher&lt;Swift.Result&lt;Swift.Optional&lt;Swift.Array&lt;Pathao_Shop.ShopResponseModel&gt;&gt;, Pathao_Shop.OTError&gt;, Swift.Never&gt; in Pathao_Shop.HomeViewViewModel.transform(input: Pathao_Shop.HomeViewViewModelInput) -&gt; Pathao_Shop.HomeViewViewModelOutput"
+                  moduleName = "Pathao Shop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mdfaizulkarim/Desktop/Pathao%20Shop/Pathao%20Shop/Shared/Modules/Inside/HomeView/ViewModel/HomeViewViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "72">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

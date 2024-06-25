@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewViewController" customModule="Pathao_Shop" customModuleProvider="target">
+            <connections>
+                <outlet property="badgeButton" destination="JcI-LM-Gnc" id="HA6-SE-gzr"/>
+                <outlet property="baseView" destination="q1k-ct-6J3" id="90a-ix-hH9"/>
+                <outlet property="tableView" destination="d7B-s6-BxI" id="p7F-1c-dRG"/>
+                <outlet property="view" destination="iN0-l3-epB" id="S8a-JB-PBR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q1k-ct-6J3">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hut-fU-dqZ">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="35"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JcI-LM-Gnc" customClass="BadgeButton" customModule="Pathao_Shop" customModuleProvider="target">
+                                    <rect key="frame" x="359" y="0.0" width="35" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="35" id="H5r-6z-g7L"/>
+                                        <constraint firstAttribute="height" constant="35" id="rMH-1L-Ohh"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="nav_cart_black"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="JcI-LM-Gnc" secondAttribute="trailing" constant="20" id="GLm-cy-aS5"/>
+                                <constraint firstItem="JcI-LM-Gnc" firstAttribute="top" secondItem="hut-fU-dqZ" secondAttribute="top" id="KLg-Tn-Hyn"/>
+                                <constraint firstAttribute="height" constant="35" id="LrE-P0-G7S"/>
+                                <constraint firstAttribute="bottom" secondItem="JcI-LM-Gnc" secondAttribute="bottom" id="fJb-Ra-Qmt"/>
+                            </constraints>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7B-s6-BxI">
+                            <rect key="frame" x="0.0" y="35" width="414" height="701"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="fcb-Dv-Svd"/>
+                                <outlet property="delegate" destination="-1" id="fu4-pI-DVR"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="d7B-s6-BxI" firstAttribute="top" secondItem="hut-fU-dqZ" secondAttribute="bottom" id="3mX-vp-QNu"/>
+                        <constraint firstAttribute="trailing" secondItem="hut-fU-dqZ" secondAttribute="trailing" id="CZI-hM-K6U"/>
+                        <constraint firstItem="hut-fU-dqZ" firstAttribute="leading" secondItem="q1k-ct-6J3" secondAttribute="leading" id="DtV-w0-4FH"/>
+                        <constraint firstItem="d7B-s6-BxI" firstAttribute="leading" secondItem="q1k-ct-6J3" secondAttribute="leading" id="VIN-4p-U9T"/>
+                        <constraint firstItem="hut-fU-dqZ" firstAttribute="top" secondItem="q1k-ct-6J3" secondAttribute="top" id="ZhT-zf-Jl4"/>
+                        <constraint firstAttribute="bottom" secondItem="d7B-s6-BxI" secondAttribute="bottom" id="arl-3o-P9Y"/>
+                        <constraint firstAttribute="trailing" secondItem="d7B-s6-BxI" secondAttribute="trailing" id="b1h-7Z-UlL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="q1k-ct-6J3" secondAttribute="trailing" id="Cy2-ya-cks"/>
+                <constraint firstItem="q1k-ct-6J3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Tao-Lz-PgS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="q1k-ct-6J3" secondAttribute="bottom" id="YOG-pa-Xtb"/>
+                <constraint firstItem="q1k-ct-6J3" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="wyK-PZ-FHS"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="85.59782608695653"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="nav_cart_black" width="20" height="20"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
